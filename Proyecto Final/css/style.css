@@ -9,13 +9,20 @@ body
 {
     background-color: #efefef;
     font-family: 'Permanent Marker', cursive;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    align-content: space-around;
+    align-items: stretch;
+    justify-items: stretch;
+
 }
 
 /*header*/
 header
 {
     background-color: #364552;
-    width: 100%;
+    /*width: 100%;*/
     padding: 2rem 1rem 2rem 1rem;
     color: coral;
     clear: both;
@@ -90,6 +97,7 @@ header .logo__division__img
 {
     width: 60rem;
     margin: 0 auto;
+   
 }
 
 /*links y contendores*/
@@ -102,6 +110,8 @@ header .logo__division__img
     cursor: pointer;
     text-align: center;
 }
+
+
 
 .bodyPage__primerContenido:hover, .bodyPage__segundoContenido:hover, .bodyPage__tercerContenido:hover{
     box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
@@ -381,4 +391,17 @@ footer a:hover
     padding: auto;
     text-align: center;
     background-color:  rgba(255, 232, 155, 0.863);
+}
+
+/* Media Queris*/
+
+@media screen (max-width: 880px){
+    body{
+        justify-content: space-between;
+    }
+}
+@media screen (min-width: 881px){
+    body{
+        justify-content: none;
+    }
 }
